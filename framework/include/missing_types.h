@@ -7,6 +7,7 @@ namespace app {
         struct enSEType {};
     }
 	struct BattleObjectModuleAccessor {};
+	struct Fighter {};
     struct LinkEventLassoHang {};
     struct AreaContactLog  {};
     struct FighterRidleyLinkEventMotion {};
@@ -64,7 +65,61 @@ namespace app {
     struct FighterKineticEnergyMotion {};
     struct GimmickEventDrumRelease {};
     struct GimmickEventLadder {};
-    struct AttackData {};
+    struct AttackData {
+		/*float offset_x_, //x
+		float offset_y_, //y
+		float offset_z_, //z
+		float offset2_x_, //x2
+		float offset2_y_, //y2
+		float offset2_z_, //z2
+		float power_, //damage
+		float size_, //size
+		int vector_, //angle
+		int r_eff_, //kbg
+		int r_fix_, //fkb
+		int r_add_, //bkb
+		float slip_, //trip chance
+		float stop_frame_, //hitlag multiplier
+		float stop_delay_, //sdi multiplier
+		u64 node_, //bone
+		u64 target_situation_, //ground/air
+		u64 target_lr_, //opponent's facing (for shulk back slash?)
+		u64 target_part_, //collision part
+		u64 attr_, //collision attribute
+		u64 sound_level_, //SFX level
+		u64 sound_attr_, //SFX type
+		u64 set_off_, //clang/rebound
+		u64 no_scale_, //ignore model scaling
+		u64 shield_, //does it hit shields
+		u64 reflector_, //reflectable
+		u64 absorber_, //absorbable
+		u64 direct_, //direct/indirect
+		u64 no_invincible_, //ignore invincibility
+		u64 no_xlu_, //ignore intangibility
+		u64 lr_check_, //facing restrict
+		u64 catch_, //is it a grab
+		u64 no_team_, //friendly fire
+		u64 no_stop_, //disable hitlag
+		u64 no_effect_, //flinchless
+		u64 region_, //type (ex: ATTACK_REGION_KICK)
+		u64 ignore_down_, //ignore downed opponents
+		u64 check_type_, //hitbits
+		u64 sub_shield_, //shield damage
+		u64 camera_quake_, //camera quake
+		u64 serial_hit_frame_, //rehit rate
+		u64 force_reaction_, //launch no matter what
+		u64 no_attacker_log_, //ignore staling?
+		u64 no_weight_reaction_, //set weight
+		u64 no_reaction_search_, //search hitbox
+		u64 keep_rumble_, //keep rumble
+		u64 composition_speed_, //no idea
+		u64 target_pos_node_, //which of opponent's bones is moved into position specified by target_pos_offset (used in autolink angles such as 368)
+		float target_pos_offset_x_, //where opponent is moved to (used in autolink angles such as 368)
+		float target_pos_offset_y_,
+		float target_pos_offset_z_,
+		u64 target_pos_frame_, //how long it takes opponent to move into the position specified by target pos_offset (used in autolink angles such as 368)
+		u64 r_fix_damage_speed_up_ //whether or not to undergo balloon knockback during set knockback*/
+	};
     struct GimmickEventDrumPos {};
     struct GimmickEventDrumShake {};
     struct GimmickEventDrumCheckNeedLock {};
